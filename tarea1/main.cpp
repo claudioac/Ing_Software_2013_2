@@ -24,8 +24,14 @@ int main(int argc, char** argv) {
     for (int i = 0; i < argc; i++) {
         cout<< "Argumento["<<i<<"]:"<<argv[i]<<"\n";
         }
-    
-  
+   int largocadena=strlen(argv[2]);
+   cout<<largocadena<<"\n";
+   for (int i = 0; i < largocadena; i++) {
+       cout<<argv[2][i]<<"\n";
+   }
+   
+      int gradopolinomio= atoi(argv[2][3]);
+cout <<"grado = "<<gradopolinomio;   
     return 0;
 }
 

@@ -30,7 +30,7 @@ int main(int argc, char** argv) {
        cout<<argv[2][i]<<"\n";
    }
    
-      int gradopolinomio= atoi(argv[2][3]);
+      int gradopolinomio= (char)argv[2][2];
 cout <<"grado = "<<gradopolinomio;   
     return 0;
 }

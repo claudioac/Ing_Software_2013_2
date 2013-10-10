@@ -25,14 +25,34 @@ int main(int argc, char** argv) {
         cout<< "Argumento["<<i<<"]:"<<argv[i]<<"\n";
         }
    int largocadena=strlen(argv[2]);
+   
    cout<<largocadena<<"\n";
    cout<<"----------------------"<<endl;
    for (int i = 0; i < largocadena; i++) {
-       cout<<argv[2][i]<<"\n";
+       cout<<argv[2][i]<<"-";
    }
    cout<<"-----------------------"<<endl;
+   
    std::string polinomio =argv[2];
-   int b=1;
+   
+   int vector [largocadena];
+   for (int i = 0; i < largocadena; i++) {
+        vector[i]=0;
+    }
+   char Letra;
+
+   for (int i = 0; i < largocadena; i++) {//Funcion de Transformacion de String a un Vector
+        
+        Letra = polinomio[i];
+       
+       int aux = Letra -48;
+       vector[i]=aux;
+       cout<<vector[i]<<"-";
+       }
+ 
+   cout<<endl;
+   
+   int b=1;//Menu para Ejecurtar las Diferentes Funciones de la Tarea
    int c=1;
    int d=1;
    b=  strcmp(argv[1],"-i");

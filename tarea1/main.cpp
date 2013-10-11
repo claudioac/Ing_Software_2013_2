@@ -10,6 +10,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <time.h>
+#include <ctype.h>
+
 using namespace std;
 
 /*
@@ -75,11 +77,15 @@ int main(int argc, char** argv) {
    char Letra;
 
    for (int i = 0; i < largocadena; i++) {//Funcion de Transformacion de String a un Vector
-        
-        Letra = polinomio[i];
-       
-       int aux = Letra -48;
-       vector[i]=aux;
+       if(isdigit(polinomio[i])!=0)// comprueba si el elemento es un digito,donde 0 es la condicion falsa.
+        {
+
+            Letra = polinomio[i];
+
+            int aux = Letra -48;
+
+        vector[i]=aux;
+        }
        cout<<vector[i]<<"*";
        }
  

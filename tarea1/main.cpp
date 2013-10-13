@@ -57,6 +57,14 @@ void integrar(int coeficiente[],int tamano ,int grado, char simbolo[])
     }
    
 }
+//   for (int i = 0; i < tamano; i++) {
+//      
+//       cout <<auxcoef<<"x^"<<auxexp<<" ";
+//
+//    }
+
+
+
 int main(int argc, char** argv) {
     int i=0;
 //    cout << "ejecutable"<<argv[0]<<"\n";
@@ -67,9 +75,9 @@ int main(int argc, char** argv) {
 //     int b=1;//Menu para Ejecurtar las Diferentes Funciones de la Tarea
 //   
 //   int d=1;
-//   b=  strcmp(argv[1],"-i");
 //   
-//   d= strcmp(argv[1],"-g");
+   
+  
 //   if(b==0) 
 //       cout<<"Ceros del Polinomio";
 //   if(d==0)
@@ -85,12 +93,12 @@ int main(int argc, char** argv) {
    } 
    else{   
  //---------------------------------------------------Integral Simple-------------------------------------------------      
-       if(argc==3){
+       if(argc==3 && strcmp(argv[1],"-i")==0){
  
        int largocadena=strlen(argv[2]);
    
        for (int i = 0; i < largocadena; i++) {
-       cout<<argv[2][i]<<"*";
+       cout<<argv[2][i]<<" ";
    
        }
        cout<<endl;
@@ -116,13 +124,13 @@ int main(int argc, char** argv) {
 
         }
        
-       cout<<grado;
-       cout<<endl;
+//       cout<<grado;
+//       cout<<endl;
      char simbolo[grado];
       int k=0;
        for (int i = 0; i < largocadena ;i++) 
        {
-                cout<<poli[i]<<"*";
+//                cout<<poli[i]<<"*";
                 if(poli[i]=='+' || poli[i]=='-')
                 {
                     simbolo[k]=poli[i];
@@ -132,18 +140,18 @@ int main(int argc, char** argv) {
                 }
         }
        
-       cout<<endl;
+//       cout<<endl;
        
-       for (int i = 0; i <grado; i++) {
-                cout<<"[ "<<simbolo[i]<<" ]";
-
-
-            }
-       cout<<endl;
+//       for (int i = 0; i <grado; i++) {
+//                cout<<"[ "<<simbolo[i]<<" ]";
+//
+//
+//            }
+//       cout<<endl;
 
          for (int i = 0; i < largocadena ;i++) 
        {
-                cout<<poli[i]<<"*";
+//                cout<<poli[i]<<"*";
                 if(poli[i]=='^')
                 {
                     poli[i]=' ';
@@ -152,7 +160,7 @@ int main(int argc, char** argv) {
                 
 
         }
-       cout<<endl;
+//       cout<<endl;
 //       int contador=0;
 //        for (int i = 0; i < largocadena ;i++) 
 //       {
@@ -174,17 +182,17 @@ int main(int argc, char** argv) {
                     vector[i]=poli[i]-48;
                     
           }
-                cout<<vector[i]<<"*";
+//                cout<<vector[i]<<"*";
 
         }
        
-       cout<<endl;
-       for (int i = 0; i < largocadena ;i++) 
-       {
-                cout<<poli[i]<<"*";
-
-        }
-       cout<<endl;
+//       cout<<endl;
+//       for (int i = 0; i < largocadena ;i++) 
+//       {
+//                cout<<poli[i]<<"*";
+//
+//        }
+//       cout<<endl;
 //       
 //       int contador=0;
 //       for (int i = 0; i < largocadena; i++) {
@@ -201,9 +209,9 @@ int main(int argc, char** argv) {
        for (int i = 0; i < largocadena; i++) {
                 vector2[i]=0;
 
-                cout<<vector2[i]<<"-";
+//                cout<<vector2[i]<<"-";
           }
-       cout<<endl;
+//       cout<<endl;
         int aux=0;
        for (int i = 0; i < largocadena; i++) 
        {
@@ -228,13 +236,13 @@ int main(int argc, char** argv) {
 
             }
 
-        cout<<"Vector 2 = ";
-       for (int i = 0; i < largocadena; i++) {
-                cout<<vector2[i]<<" ";
-
-
-            }
-        cout<<endl;
+//        cout<<"Vector 2 = ";
+//       for (int i = 0; i < largocadena; i++) {
+//                cout<<vector2[i]<<" ";
+//
+//
+//            }
+//        cout<<endl;
 
 //               int contador=0;
 //       for (int i = 0; i < largocadena; i++) {
@@ -264,17 +272,17 @@ int main(int argc, char** argv) {
            }
             }
 
-       cout<<"Vector 3  Coeficientes = ";
-       for (int i = 0; i < largocadena; i++) {
-                cout<<vector3[i]<<" ";
-
-
-            }
-       cout<<endl;
+//       cout<<"Vector 3  Coeficientes = ";
+//       for (int i = 0; i < largocadena; i++) {
+//                cout<<vector3[i]<<" ";
+//
+//
+//            }
+//       cout<<endl;
 
        cout<<"el grado = "<<grado<<endl;
-
-       integrar(vector3 ,largocadena ,grado,simbolo );
+       cout<<"La Integral es  = ";
+       integrar(vector3 ,largocadena ,grado ,simbolo);
             }
 
 
@@ -304,14 +312,14 @@ int main(int argc, char** argv) {
   
        
  //-------------------------------------------------Integral Definida------------------------------------------------------------      
- if(argc==5)
+ if(argc==5 && strcmp(argv[1],"-g")==0)
  
  {
      
     int largocadena=strlen(argv[2]);
    
        for (int i = 0; i < largocadena; i++) {
-       cout<<argv[2][i]<<"*";
+       cout<<argv[2][i]<<" ";
    
        }
        cout<<endl;
@@ -337,13 +345,11 @@ int main(int argc, char** argv) {
 
         }
        
-       cout<<grado;
-       cout<<endl;
        char simbolo[grado];
       int k=0;
        for (int i = 0; i < largocadena ;i++) 
        {
-                cout<<poli[i]<<"*";
+//                cout<<poli[i]<<"*";
                 if(poli[i]=='+' || poli[i]=='-')
                 {
                     simbolo[k]=poli[i];
@@ -353,17 +359,17 @@ int main(int argc, char** argv) {
                 
 
         }
-      for (int i = 0; i < grado; i++) {
-          cout<<"Prueba"<<endl;
-            cout<<"[ "<<simbolo[i]<<" ]"<<endl;
-
-
-        }
-       
-       cout<<endl;
+//      for (int i = 0; i < grado; i++) {
+//          cout<<"Prueba"<<endl;
+//            cout<<"[ "<<simbolo[i]<<" ]"<<endl;
+//
+//
+//        }
+//       
+   
          for (int i = 0; i < largocadena ;i++) 
        {
-                cout<<poli[i]<<"*";
+//                cout<<poli[i]<<"*";
                 if(poli[i]=='^')
                 {
                     poli[i]=' ';
@@ -394,17 +400,17 @@ int main(int argc, char** argv) {
                     vector[i]=poli[i]-48;
                     
           }
-                cout<<vector[i]<<"*";
+//                cout<<vector[i]<<"*";
 
         }
        
-       cout<<endl;
-       for (int i = 0; i < largocadena ;i++) 
-       {
-                cout<<poli[i]<<"*";
-
-        }
-       cout<<endl;
+       
+//       for (int i = 0; i < largocadena ;i++) 
+//       {
+//                cout<<poli[i]<<"*";
+//
+//        }
+//       cout<<endl;
 //       
 //       int contador=0;
 //       for (int i = 0; i < largocadena; i++) {
@@ -421,9 +427,9 @@ int main(int argc, char** argv) {
        for (int i = 0; i < largocadena; i++) {
                 vector2[i]=0;
 
-                cout<<vector2[i]<<"-";
+//                cout<<vector2[i]<<"-";
           }
-       cout<<endl;
+      
         int aux=0;
        for (int i = 0; i < largocadena; i++) 
        {
@@ -448,13 +454,13 @@ int main(int argc, char** argv) {
 
             }
 
-        cout<<"Vector 2 = ";
-       for (int i = 0; i < largocadena; i++) {
-                cout<<vector2[i]<<" ";
-
-
-            }
-        cout<<endl;
+//        cout<<"Vector 2 = ";
+//       for (int i = 0; i < largocadena; i++) {
+//                cout<<vector2[i]<<" ";
+//
+//
+//            }
+//        cout<<endl;
 
 //               int contador=0;
 //       for (int i = 0; i < largocadena; i++) {
@@ -484,18 +490,14 @@ int main(int argc, char** argv) {
            }
             }
 
-       cout<<"Vector 3  Coeficientes = ";
-       for (int i = 0; i < largocadena; i++) {
-                cout<<vector3[i]<<" ";
+//       cout<<"Vector 3  Coeficientes = ";
+//       for (int i = 0; i < largocadena; i++) {
+//                cout<<vector3[i]<<" ";
+//
+//
+//            }
+//       cout<<endl;
 
-
-            }
-       cout<<endl;
-
-       cout<<"el grado = "<<grado<<endl;
-
-       cout<<"la Integral Es: " ;
-       integrar(vector3 ,largocadena ,grado,simbolo );
             
  
 //   int largocadena=strlen(argv[2]);

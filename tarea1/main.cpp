@@ -11,6 +11,7 @@
 #include <string.h>
 #include <time.h>
 #include <ctype.h>
+#include <cmath>
 
 using namespace std;
 
@@ -63,7 +64,15 @@ void integrar(int coeficiente[],int tamano ,int grado, char simbolo[])
 //
 //    }
 
-
+float evaluaIntegral(int coeficiente[], int tamano, int grado, int linferior, int lsuperior){
+    float intesup, inteinf;
+    int x= grado+1;
+    for (int i = 0; i < tamano; i++) {
+        intesup=intesup + (1.0*coeficiente[i]/x)*pow(lsuperior,x);
+        inteinf=inteinf+(1.0*coeficiente[i]/x)*pow(linferior,x);
+    }
+    return intesup-inteinf;
+}
 
 int main(int argc, char** argv) {
     int i=0;
@@ -283,6 +292,8 @@ int main(int argc, char** argv) {
        cout<<"el grado = "<<grado<<endl;
        cout<<"La Integral es  = ";
        integrar(vector3 ,largocadena ,grado ,simbolo);
+       
+       cout<< evaluaIntegral(vector3 ,largocadena ,grado ,2,6);
             }
 
 

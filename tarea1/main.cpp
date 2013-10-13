@@ -42,27 +42,20 @@ void fecha(){
 //    
 //    s = coef / grado;
 //}
-void integrar(int coeficiente[],int tamano ,int grado)
+void integrar(int coeficiente[],int tamano ,int grado, char simbolo[])
 {
 //   char auxcoef[tamano]; 
    int auxexp[tamano];
    int x= grado+1;
    
-    for (int i = 0; i < tamano; i++) {
+    for (int i = 0; i < tamano; i++ && (simbolo[i]=='+' || simbolo[i]=='-' )) {
 //        auxcoef[i]=coeficiente[i]/ x;
         if(coeficiente[i]!=0)
-        cout << coeficiente[i]<<"/"<< x<<"x^"<<x<<" ";
+        cout <<coeficiente[i]<<"/"<< x<<"x^"<<x<<simbolo[i];
         auxexp[i]=x;
         x--;
     }
    
-//   for (int i = 0; i < tamano; i++) {
-//      
-//       cout <<auxcoef<<"x^"<<auxexp<<" ";
-//
-//    }
-
-
 }
 int main(int argc, char** argv) {
     int i=0;
@@ -281,7 +274,7 @@ int main(int argc, char** argv) {
 
        cout<<"el grado = "<<grado<<endl;
 
-       integrar(vector3 ,largocadena ,grado );
+       integrar(vector3 ,largocadena ,grado,simbolo );
             }
 
 
@@ -501,7 +494,8 @@ int main(int argc, char** argv) {
 
        cout<<"el grado = "<<grado<<endl;
 
-       integrar(vector3 ,largocadena ,grado );
+       cout<<"la Integral Es: " ;
+       integrar(vector3 ,largocadena ,grado,simbolo );
             
  
 //   int largocadena=strlen(argv[2]);

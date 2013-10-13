@@ -103,7 +103,7 @@ int main(int argc, char** argv) {
        for (int i = 0; i < largocadena ;i++) 
        {
                 cout<<poli[i]<<"*";
-                if(poli[i]=='+')
+                if(poli[i]=='+' || poli[i]=='-')
                     poli[i]=' ';
                 
 
@@ -173,26 +173,75 @@ int main(int argc, char** argv) {
                 cout<<vector2[i]<<"-";
           }
        cout<<endl;
-       
+        int aux=0;
        for (int i = 0; i < largocadena; i++) 
        {
-          int aux=0; 
+          
            if (vector[i]!=0) {
                vector2[aux]=vector[i];
                aux++;
 
                 }
         }
+        //Funcion comprobar
+        for (int i = 0; i < largocadena; i++) {
+                if(vector2[i]==72 || vector2[i]==73)
+                    if(vector2[i]==vector2[i+i])
+                    {
+                        vector2[i]=0;
+                        vector2[i+1]=1;
+                    }   
+                    else
+                        vector2[i]=0;
 
+
+            }
+
+        cout<<"Vector 2 = ";
        for (int i = 0; i < largocadena; i++) {
                 cout<<vector2[i]<<" ";
 
 
             }
+        cout<<endl;
 
+//               int contador=0;
+//       for (int i = 0; i < largocadena; i++) {
+//                if(vector2[i]!=0)
+//                    contador++;
+//
+//
+//        }
+//       cout<<contador<<" Tamaño del vector";
+//       cout<<endl;
+//      
+       int vector3[largocadena];
        
-       
+       for (int i = 0; i < largocadena; i++) {
+                vector3[i]= 0;
 
+
+            }
+       
+       int aux2=0;
+       for (int i = 0; i < largocadena; i++) {
+           if(vector2[i]!=0){ 
+               
+           vector3[aux2] = vector2[i];
+                aux2++;
+               
+           }
+            }
+
+       cout<<"Vector 3  Coeficientes = ";
+       for (int i = 0; i < largocadena; i++) {
+                cout<<vector3[i]<<" ";
+
+
+            }
+       cout<<endl;
+
+       cout<<"el grado = "<<grado<<endl;
 
             }
 

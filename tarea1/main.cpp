@@ -17,6 +17,16 @@ using namespace std;
 /*
  * 
  */
+int CuentaSuma(string ingreso){
+    int cuenta=0;
+
+    for(int i =0; i < ingreso.size(); i++)
+    {
+        if(ingreso[i]=='+')
+            cuenta++;
+    }
+    return cuenta;
+}
 void fecha(){
   time_t rawtime;
   time (&rawtime);
@@ -67,32 +77,150 @@ int main(int argc, char** argv) {
        cout<<endl;
    
        std::string polinomio =argv[2];
-   
+
+       char *poli =strdup(polinomio.c_str());
        int vector [largocadena];
    
        for (int i = 0; i < largocadena; i++) {
         vector[i]=0;
    
        }
-   char Letra;
+       int grado;
+       int cuenta=0;
+              for (int i = 0; i < largocadena ;i++) 
+       {
+                
+                if(poli[i]=='^'){
+                    grado=poli[i+1]-48;
+                    i=largocadena;
+                }
 
-   for (int i = 0; i < largocadena; i++) {//Funcion de Transformacion de String a un Vector
-       if(isdigit(polinomio[i])!=0)// comprueba si el elemento es un digito,donde 0 es la condicion falsa.
-        {
-
-            Letra = polinomio[i];
-
-            int aux = Letra -48;
-
-        vector[i]=aux;
         }
-       cout<<vector[i]<<"*";
-       }
- 
-   cout<<endl;
+       
+       cout<<grado;
+       cout<<endl;
+       
+       for (int i = 0; i < largocadena ;i++) 
+       {
+                cout<<poli[i]<<"*";
+                if(poli[i]=='+')
+                    poli[i]=' ';
+                
+
+        }
+       
+       cout<<endl;
+         for (int i = 0; i < largocadena ;i++) 
+       {
+                cout<<poli[i]<<"*";
+                if(poli[i]=='^')
+                {
+                    poli[i]=' ';
+                    poli[i+1]=' ';
+                }
+                
+
+        }
+       cout<<endl;
+//       int contador=0;
+//        for (int i = 0; i < largocadena ;i++) 
+//       {
+//               
+//                if(poli[i]==' ')
+//           {
+//                    contador++;
+//                    
+//          }
+//                
+//
+//        }
+
+          for (int i = 0; i < largocadena ;i++) //Transforma a un vector con puros signos
+       {
+               
+                if(poli[i]!=' ')
+           {
+                    vector[i]=poli[i]-48;
+                    
+          }
+                cout<<vector[i]<<"*";
+
+        }
+       
+       cout<<endl;
+       for (int i = 0; i < largocadena ;i++) 
+       {
+                cout<<poli[i]<<"*";
+
+        }
+       cout<<endl;
+//       
+//       int contador=0;
+//       for (int i = 0; i < largocadena; i++) {
+//                if(vector[i]==0)
+//                    contador++;
+//
+//
+//        }
+//       cout<<contador<<" Tamaño del vector";
+//       cout<<endl;
+//       
+       
+       int vector2[largocadena];
+       for (int i = 0; i < largocadena; i++) {
+                vector2[i]=0;
+
+                cout<<vector2[i]<<"-";
+          }
+       cout<<endl;
+       
+       for (int i = 0; i < largocadena; i++) 
+       {
+          int aux=0; 
+           if (vector[i]!=0) {
+               vector2[aux]=vector[i];
+               aux++;
+
+                }
+        }
+
+       for (int i = 0; i < largocadena; i++) {
+                cout<<vector2[i]<<" ";
+
+
+            }
+
+       
+       
+
+
+            }
+
+
+
+       
+     
+   
+//   char Letra;
+//
+//   for (int i = 0; i < largocadena; i++) {//Funcion de Transformacion de String a un Vector
+//       if(isdigit(polinomio[i])!=0)// comprueba si el elemento es un digito,donde 0 es la condicion falsa.
+//        {
+//
+//            Letra = polinomio[i];
+//
+//            int aux = Letra -48;
+//
+//        vector[i]=aux;
+//        }
+//       cout<<vector[i]<<"*";
+//       }
+// 
+//   cout<<endl;
        
        }
-   }
+       
+  
        
  //-------------------------------------------------Integral Definida------------------------------------------------------------      
  if(argc==5)

@@ -125,17 +125,29 @@ int main(int argc, char** argv) {
        
        cout<<grado;
        cout<<endl;
-       
+     char simbolo[grado];
+      int k=0;
        for (int i = 0; i < largocadena ;i++) 
        {
                 cout<<poli[i]<<"*";
                 if(poli[i]=='+' || poli[i]=='-')
+                {
+                    simbolo[k]=poli[i];
+                k++;
                     poli[i]=' ';
                 
-
+                }
         }
        
        cout<<endl;
+       
+       for (int i = 0; i <grado; i++) {
+                cout<<"[ "<<simbolo[i]<<" ]";
+
+
+            }
+       cout<<endl;
+
          for (int i = 0; i < largocadena ;i++) 
        {
                 cout<<poli[i]<<"*";
@@ -302,34 +314,224 @@ int main(int argc, char** argv) {
  if(argc==5)
  
  {
-   int largocadena=strlen(argv[2]);
+     
+    int largocadena=strlen(argv[2]);
    
        for (int i = 0; i < largocadena; i++) {
        cout<<argv[2][i]<<"*";
    
        }
-   cout<<endl;
+       cout<<endl;
    
        std::string polinomio =argv[2];
-   
+
+       char *poli =strdup(polinomio.c_str());
        int vector [largocadena];
    
        for (int i = 0; i < largocadena; i++) {
         vector[i]=0;
    
        }
-   char Letra;
+       int grado;
+       int cuenta=0;
+              for (int i = 0; i < largocadena ;i++) 
+       {
+                
+                if(poli[i]=='^'){
+                    grado=poli[i+1]-48;
+                    i=largocadena;
+                }
 
-   for (int i = 0; i < largocadena; i++) {//Funcion de Transformacion de String a un Vector
-        
-        Letra = polinomio[i];
+        }
        
-       int aux = Letra -48;
-       vector[i]=aux;
-       cout<<vector[i]<<"*";
-       }
+       cout<<grado;
+       cout<<endl;
+       char simbolo[grado];
+      int k=0;
+       for (int i = 0; i < largocadena ;i++) 
+       {
+                cout<<poli[i]<<"*";
+                if(poli[i]=='+' || poli[i]=='-')
+                {
+                    simbolo[k]=poli[i];
+                     k++;       
+                    poli[i]=' ';
+                }
+                
+
+        }
+      for (int i = 0; i < grado; i++) {
+          cout<<"Prueba"<<endl;
+            cout<<"[ "<<simbolo[i]<<" ]"<<endl;
+
+
+        }
+       
+       cout<<endl;
+         for (int i = 0; i < largocadena ;i++) 
+       {
+                cout<<poli[i]<<"*";
+                if(poli[i]=='^')
+                {
+                    poli[i]=' ';
+                    poli[i+1]=' ';
+                }
+                
+
+        }
+       cout<<endl;
+//       int contador=0;
+//        for (int i = 0; i < largocadena ;i++) 
+//       {
+//               
+//                if(poli[i]==' ')
+//           {
+//                    contador++;
+//                    
+//          }
+//                
+//
+//        }
+
+          for (int i = 0; i < largocadena ;i++) //Transforma a un vector con puros signos
+       {
+               
+                if(poli[i]!=' ')
+           {
+                    vector[i]=poli[i]-48;
+                    
+          }
+                cout<<vector[i]<<"*";
+
+        }
+       
+       cout<<endl;
+       for (int i = 0; i < largocadena ;i++) 
+       {
+                cout<<poli[i]<<"*";
+
+        }
+       cout<<endl;
+//       
+//       int contador=0;
+//       for (int i = 0; i < largocadena; i++) {
+//                if(vector[i]==0)
+//                    contador++;
+//
+//
+//        }
+//       cout<<contador<<" Tamaño del vector";
+//       cout<<endl;
+//       
+       
+       int vector2[largocadena];
+       for (int i = 0; i < largocadena; i++) {
+                vector2[i]=0;
+
+                cout<<vector2[i]<<"-";
+          }
+       cout<<endl;
+        int aux=0;
+       for (int i = 0; i < largocadena; i++) 
+       {
+          
+           if (vector[i]!=0) {
+               vector2[aux]=vector[i];
+               aux++;
+
+                }
+        }
+        //Funcion comprobar
+        for (int i = 0; i < largocadena; i++) {
+                if(vector2[i]==72 || vector2[i]==73)
+                    if(vector2[i]==vector2[i+i])
+                    {
+                        vector2[i]=0;
+                        vector2[i+1]=1;
+                    }   
+                    else
+                        vector2[i]=0;
+
+
+            }
+
+        cout<<"Vector 2 = ";
+       for (int i = 0; i < largocadena; i++) {
+                cout<<vector2[i]<<" ";
+
+
+            }
+        cout<<endl;
+
+//               int contador=0;
+//       for (int i = 0; i < largocadena; i++) {
+//                if(vector2[i]!=0)
+//                    contador++;
+//
+//
+//        }
+//       cout<<contador<<" Tamaño del vector";
+//       cout<<endl;
+//      
+       int vector3[largocadena];
+       
+       for (int i = 0; i < largocadena; i++) {
+                vector3[i]= 0;
+
+
+            }
+       
+       int aux2=0;
+       for (int i = 0; i < largocadena; i++) {
+           if(vector2[i]!=0){ 
+               
+           vector3[aux2] = vector2[i];
+                aux2++;
+               
+           }
+            }
+
+       cout<<"Vector 3  Coeficientes = ";
+       for (int i = 0; i < largocadena; i++) {
+                cout<<vector3[i]<<" ";
+
+
+            }
+       cout<<endl;
+
+       cout<<"el grado = "<<grado<<endl;
+
+       integrar(vector3 ,largocadena ,grado );
+            
  
-   cout<<endl;
+//   int largocadena=strlen(argv[2]);
+//   
+//       for (int i = 0; i < largocadena; i++) {
+//       cout<<argv[2][i]<<"*";
+//   
+//       }
+//   cout<<endl;
+//   
+//       std::string polinomio =argv[2];
+//   
+//       int vector [largocadena];
+//   
+//       for (int i = 0; i < largocadena; i++) {
+//        vector[i]=0;
+//   
+//       }
+//   char Letra;
+//
+//   for (int i = 0; i < largocadena; i++) {//Funcion de Transformacion de String a un Vector
+//        
+//        Letra = polinomio[i];
+//       
+//       int aux = Letra -48;
+//       vector[i]=aux;
+//       cout<<vector[i]<<"*";
+//       }
+// 
+//   cout<<endl;
        
     int limiteinferior = atoi(argv[3]);
     int limitesuperior = atoi(argv[4]);
@@ -337,9 +539,9 @@ int main(int argc, char** argv) {
     cout<<"Limite Inferior: "<<limiteinferior<<endl;
     cout<<"Limite Superior: "<<limitesuperior<<endl;
  
+ 
+   
  }
-   
-   
      
    
    

@@ -37,7 +37,33 @@ void fecha(){
   cout<<"La Fecha de Hoy es: "<<ctime(&rawtime);
   cout<<endl;
 }
+//void coefintegral(int coef,int exp){
+//    char s;
+//    
+//    s = coef / grado;
+//}
+void integrar(int coeficiente[],int tamano ,int grado)
+{
+//   char auxcoef[tamano]; 
+   int auxexp[tamano];
+   int x= grado+1;
+   
+    for (int i = 0; i < tamano; i++) {
+//        auxcoef[i]=coeficiente[i]/ x;
+        if(coeficiente[i]!=0)
+        cout << coeficiente[i]<<"/"<< x<<"x^"<<x<<" ";
+        auxexp[i]=x;
+        x--;
+    }
+   
+//   for (int i = 0; i < tamano; i++) {
+//      
+//       cout <<auxcoef<<"x^"<<auxexp<<" ";
+//
+//    }
 
+
+}
 int main(int argc, char** argv) {
     int i=0;
 //    cout << "ejecutable"<<argv[0]<<"\n";
@@ -243,10 +269,11 @@ int main(int argc, char** argv) {
 
        cout<<"el grado = "<<grado<<endl;
 
+       integrar(vector3 ,largocadena ,grado );
             }
 
 
-
+   
        
      
    

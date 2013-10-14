@@ -65,13 +65,16 @@ void integrar(int coeficiente[],int tamano ,int grado, char simbolo[])
 //    }
 
 float evaluaIntegral(int coeficiente[], int tamano, int grado, int linferior, int lsuperior){
-    float intesup, inteinf;
+    float contador1=0, contador2=0;
     int x= grado+1;
     for (int i = 0; i < tamano; i++) {
-        intesup=intesup + (1.0*coeficiente[i]/x)*pow(lsuperior,x);
-        inteinf=inteinf+(1.0*coeficiente[i]/x)*pow(linferior,x);
-    }
-    return intesup-inteinf;
+        if(coeficiente[i]!=0)
+        {
+        contador1=contador1 + ((1.0*coeficiente[i])*pow(lsuperior,x))/x;
+        contador2=contador2+((1.0*coeficiente[i])*pow(linferior,x))/x;
+        }
+       }
+    return (contador1-contador2);
 }
 
 int main(int argc, char** argv) {
@@ -292,8 +295,8 @@ int main(int argc, char** argv) {
        cout<<"el grado = "<<grado<<endl;
        cout<<"La Integral es  = ";
        integrar(vector3 ,largocadena ,grado ,simbolo);
-       
-       cout<< evaluaIntegral(vector3 ,largocadena ,grado ,2,6);
+//       cout<<endl;
+//       cout<< evaluaIntegral(vector3 ,largocadena ,grado ,2,6);
             }
 
 
@@ -546,7 +549,11 @@ int main(int argc, char** argv) {
     cout<<"Limite Inferior: "<<limiteinferior<<endl;
     cout<<"Limite Superior: "<<limitesuperior<<endl;
  
- 
+        cout<<"el grado = "<<grado<<endl;
+       cout<<"La Integral es  = ";
+       integrar(vector3 ,largocadena ,grado ,simbolo);
+       cout<<endl;
+       cout<<"La Integral entre los Limites es = " <<evaluaIntegral(vector3 ,largocadena ,grado ,limiteinferior,limitesuperior)<<endl;
    
  }
      

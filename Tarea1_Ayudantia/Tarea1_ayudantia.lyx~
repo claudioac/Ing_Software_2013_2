@@ -75,6 +75,23 @@ Claudio Acuña, Ricardo Soto, Jose Acuña
 La metodología de software , para la ingeniería de software es una estructura
  de trabajo realizada para planificar , controlar y estructurar un proceso
  de desarrollo en sistemas de información.
+ 
+ Resumen 
+
+Las metodologías tradicionales o Pesadas imponen diciplina de trabajo sobre el proceso del software para
+conseguir que éste sea más eficiente. Para poder lograr esto  coloca mayor énfasis en  el proceso de
+planificación y cuando éste está  bien detallado se comienza el proceso de desarrollo del software . Ademas definen  
+de forma muy rigurosa los roles, actividades , artefactos,herramientas , notaciones para el modelado y documentación 
+detallada, todo esto para llevar un control estricto del proceso. Estas metodologías no son para procesos volátiles
+sino mas bien para los que tengan un fácil pronostico  y no cambien con facilidad. 
+Entre las metodologías tradicionales o pesadas  están :
+ RUP (Rational Unified Procces) 
+ 
+ MSF (Microsoft Solution Framework) 
+ 
+ Win-Win Spiral Model 
+ 
+ Iconix 
 \end_layout
 
 \begin_layout Section

@@ -1,0 +1,225 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize letterpaper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Metodología XP (programación Extrema)
+\end_layout
+
+\begin_layout Standard
+La metodología xp se basa en tres capas las cuales contienen las doce prácticas
+ básicas de esta metodología.
+\end_layout
+
+\begin_layout Standard
+desde la capa mas externa a la mas interna son:
+\end_layout
+
+\begin_layout Enumerate
+Metodología de procesos: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Diseño sencillo: Diseño tan simple como sea posible
+\end_layout
+
+\begin_layout Enumerate
+test : objetivo del test no es detectar errores, si no evitarlos.
+\end_layout
+
+\begin_layout Enumerate
+Refactorizacion: modificar el código viejo o obsoleto para dejarlo en buen
+ estado
+\end_layout
+
+\begin_layout Enumerate
+Codificación con estándares: tener una nomenclatura en común para que todos
+ los participantes entiendan el código.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Metodología de equipo:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\lang spanish
+Propiedad
+\lang english
+ 
+\lang spanish
+colectiva
+\lang english
+ del código: el código pertenece a todo el equipo y cualquier miembro tiene
+ el derecho y deber de modificarlo.
+\end_layout
+
+\begin_layout Enumerate
+Programación por parejas: Dos personas enfrentadas a un solo computador
+ interactuando entre si para solucionar un problema.
+\end_layout
+
+\begin_layout Enumerate
+Integración continua: todas las funcionalidades ya deben estar ensambladas
+ en el sistema desde el inicio y no al final, ya que así permite la pronta
+ corrección de errores 
+\end_layout
+
+\begin_layout Enumerate
+Cuarenta horas semanales: habla de que el trabajo debe ser desarrollado
+ durante la jornada laboral.
+ si se solicitan horas extras hay que replantearse el proyecto.
+\end_layout
+
+\begin_layout Enumerate
+Metáfora del negocio: una historia común compartida por el usuario y el
+ equipo de desarrollo que describe como deben comportarse las diferentes
+ partes del sistema que se quiere implementar
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Metodología de Programación: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Cliente in situ: el cliente siempre debe estar disponible para el resto
+ del equipo, formando parte de el y fomentando la comunicación face to face.
+\end_layout
+
+\begin_layout Enumerate
+Entregas frecuentes: se debe desarrollar lo antes posible versiones pequeñas
+ del sistema 
+\end_layout
+
+\begin_layout Enumerate
+Planificación Incremental: la planificación se plantea como un permanente
+ dialogo entre los responsables de la perspectiva empresarial y de la perspectiv
+aa técnica del proyecto.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+La metodología XP se vale de 4 variables las cuales son:
+\end_layout
+
+\begin_layout Enumerate
+el coste: la inversión económica y en recursos.
+\end_layout
+
+\begin_layout Enumerate
+el tiempo: el tiempo empleado, determinado por la fecha de entrega final.
+\end_layout
+
+\begin_layout Enumerate
+la calidad: de código y el de la aplicación desarrollada.
+\end_layout
+
+\begin_layout Enumerate
+el alcance: conjunto de funcionalidades.
+\end_layout
+
+\begin_layout Standard
+los cuatro valores de la metodología son:
+\end_layout
+
+\begin_layout Itemize
+comunicación: esta debe ser fluida entre todos los participante del proyecto,
+ además el entorno debe favorecer la comunicación espontánea de los involucrados.
+\end_layout
+
+\begin_layout Itemize
+Simplicidad: entre mas sencilla sea la solución, esta se podrá adaptar mas
+ fácilmente a los cambios.
+\end_layout
+
+\begin_layout Itemize
+Retroalimentacion: El usuario debe utilizar el software desarrollado , dando
+ sus apreciaciones y sus necesidades no satisfechas, de manera que eso se
+ conviertan en nuevos requerimientos del sistema.
+\end_layout
+
+\begin_layout Itemize
+coraje: 
+\begin_inset Quotes eld
+\end_inset
+
+Si funciona, puedes mejorarlo
+\begin_inset Quotes erd
+\end_inset
+
+ , es decir que se debe revisar el código que ya funciona y tratar de mejorarlo
+ y para ello se necesita bastante coraje.
+\end_layout
+
+\end_body
+\end_document

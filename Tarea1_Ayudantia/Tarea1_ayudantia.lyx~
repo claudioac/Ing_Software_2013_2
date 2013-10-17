@@ -75,23 +75,6 @@ Claudio Acuña, Ricardo Soto, Jose Acuña
 La metodología de software , para la ingeniería de software es una estructura
  de trabajo realizada para planificar , controlar y estructurar un proceso
  de desarrollo en sistemas de información.
- 
- Resumen 
-
-Las metodologías tradicionales o Pesadas imponen diciplina de trabajo sobre el proceso del software para
-conseguir que éste sea más eficiente. Para poder lograr esto  coloca mayor énfasis en  el proceso de
-planificación y cuando éste está  bien detallado se comienza el proceso de desarrollo del software . Ademas definen  
-de forma muy rigurosa los roles, actividades , artefactos,herramientas , notaciones para el modelado y documentación 
-detallada, todo esto para llevar un control estricto del proceso. Estas metodologías no son para procesos volátiles
-sino mas bien para los que tengan un fácil pronostico  y no cambien con facilidad. 
-Entre las metodologías tradicionales o pesadas  están :
- RUP (Rational Unified Procces) 
- 
- MSF (Microsoft Solution Framework) 
- 
- Win-Win Spiral Model 
- 
- Iconix 
 \end_layout
 
 \begin_layout Section
@@ -99,6 +82,316 @@ Metodología Rup
 \end_layout
 
 \begin_layout Standard
+
+\size small
+RUP es un preceso de desarrollo de software, junto con el lenguaje unificado
+ de modelado de UML, se utiliza para el analisis diseño, implementacio y
+ documentocion de sistema orientado a objetos no es un sistema con pasos
+ firmemente establesidos,sino un conjunto de metodologías adaptables al
+ contexto y necesidades de cada organización.
+ El rup esta basado en 6 principios clave 
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+Adaptar el proceso 
+\begin_inset Newline newline
+\end_inset
+
+El proceso se debera adatar a las necesidades del cliente ya que es importante
+ interactuar con ellas caracteristica propia del proyecto u organización
+ permite tener en cuenta el alcance del proyecto en un area subformal para
+ hacer un proceso de satifacion del software 
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+Equilibrar propiedades 
+\begin_inset Newline newline
+\end_inset
+
+Esto permite encontrar el equilibrio que satifaga los deseos de todos,si
+ algun participante tine unrequisito y no todos estan deacuerdo esto permite
+ equilibrar y corregir desacuerdos que surjan en el futuro
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+Demostrar valor iterativamente 
+\begin_inset Newline newline
+\end_inset
+
+Se entregan en etapas iteradas en forma interna, en cada iteracion se va
+ analizando la opinion de los inversores 
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+colaboracion entre equipos 
+\begin_inset Newline newline
+\end_inset
+
+el desarrollo de software no lo hace una persona si no multiples equipos,
+ Debe haber una comunicación fluida para coordinar requisitos, desarrollo,
+ evaluaciones, planes, resultados, etc.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+Elevar nivel abtraccion motiva 
+\begin_inset Newline newline
+\end_inset
+
+El concepto de reutilisable tales como patron de software, como 4GK o framework
+ tambien permite discusiones diversos niveles y soluciones arquitectonicas,
+ esto representa la parte visual de la arquitectura,ejemplo UML 
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+Enfocarce en la calidad 
+\begin_inset Newline newline
+\end_inset
+
+El control de calidad no debe realizarce al final de cada iteracion, es
+ decir, El aseguramiento de calidad forma parte del desarrollo que se implementa
+ en el proyecto y no de un grupo independiente.
+\end_layout
+
+\begin_layout Section
+Metodología XP (programación Extrema)
+\end_layout
+
+\begin_layout Standard
+
+\size small
+La metodología xp se basa en tres capas las cuales contienen las doce prácticas
+ básicas de esta metodología.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+desde la capa mas externa a la mas interna son:
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+Metodología de procesos: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\size small
+Diseño sencillo: Diseño tan simple como sea posible
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+test : objetivo del test no es detectar errores, si no evitarlos.
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+Refactorizacion: modificar el código viejo o obsoleto para dejarlo en buen
+ estado
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+Codificación con estándares: tener una nomenclatura en común para que todos
+ los participantes entiendan el código.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\size small
+Metodología de equipo:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\size small
+\lang spanish
+Propiedad
+\lang english
+ 
+\lang spanish
+colectiva
+\lang english
+ del código: el código pertenece a todo el equipo y cualquier miembro tiene
+ el derecho y deber de modificarlo.
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+Programación por parejas: Dos personas enfrentadas a un solo computador
+ interactuando entre si para solucionar un problema.
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+Integración continua: todas las funcionalidades ya deben estar ensambladas
+ en el sistema desde el inicio y no al final, ya que así permite la pronta
+ corrección de errores 
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+Cuarenta horas semanales: habla de que el trabajo debe ser desarrollado
+ durante la jornada laboral.
+ si se solicitan horas extras hay que replantearse el proyecto.
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+Metáfora del negocio: una historia común compartida por el usuario y el
+ equipo de desarrollo que describe como deben comportarse las diferentes
+ partes del sistema que se quiere implementar
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\size small
+Metodología de Programación: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\size small
+Cliente in situ: el cliente siempre debe estar disponible para el resto
+ del equipo, formando parte de el y fomentando la comunicación face to face.
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+Entregas frecuentes: se debe desarrollar lo antes posible versiones pequeñas
+ del sistema 
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+Planificación Incremental: la planificación se plantea como un permanente
+ dialogo entre los responsables de la perspectiva empresarial y de la perspectiv
+aa técnica del proyecto.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\size small
+La metodología XP se vale de 4 variables las cuales son:
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+el coste: la inversión económica y en recursos.
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+el tiempo: el tiempo empleado, determinado por la fecha de entrega final.
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+la calidad: de código y el de la aplicación desarrollada.
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+el alcance: conjunto de funcionalidades.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+los cuatro valores de la metodología son:
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+comunicación: esta debe ser fluida entre todos los participante del proyecto,
+ además el entorno debe favorecer la comunicación espontánea de los involucrados.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Simplicidad: entre mas sencilla sea la solución, esta se podrá adaptar mas
+ fácilmente a los cambios.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Retroalimentacion: El usuario debe utilizar el software desarrollado , dando
+ sus apreciaciones y sus necesidades no satisfechas, de manera que eso se
+ conviertan en nuevos requerimientos del sistema.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+coraje: 
+\begin_inset Quotes eld
+\end_inset
+
+Si funciona, puedes mejorarlo
+\begin_inset Quotes erd
+\end_inset
+
+ , es decir que se debe revisar el código que ya funciona y tratar de mejorarlo
+ y para ello se necesita bastante coraje.
+\end_layout
+
+\begin_layout Section
+Cuadro Comparativo
+\end_layout
+
+\begin_layout Section
+Anexos
+\end_layout
+
+\begin_layout Standard
+Repositorio: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://github.com/claudioac/Ing_Software_2013_2/tree/master/Tarea1_Ayudantia.
+\end_layout
+
+\end_inset
+
 
 \end_layout
 

@@ -25,9 +25,10 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
-\papersize default
-\use_geometry false
+\papersize letterpaper
+\use_geometry true
 \use_amsmath 1
 \use_esint 1
 \use_mhchem 1
@@ -42,6 +43,13 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\footskip 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -166,6 +174,22 @@ Enfocarce en la calidad
 El control de calidad no debe realizarce al final de cada iteracion, es
  decir, El aseguramiento de calidad forma parte del desarrollo que se implementa
  en el proyecto y no de un grupo independiente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -377,6 +401,17 @@ Si funciona, puedes mejorarlo
 
 \begin_layout Section
 Cuadro Comparativo
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 1374695_10202242292117187_498559612_n.jpg
+	scale 70
+	rotateOrigin center
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section

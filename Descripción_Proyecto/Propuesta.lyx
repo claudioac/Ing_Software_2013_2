@@ -116,8 +116,17 @@ Metodología.
 \end_layout
 
 \begin_layout Standard
-La forma de trabajo será utilizando un esquema de trabajo ágil en el cual
- el cliente podrá estar presente durante el desarrollo del presente proyecto.
+La forma de trabajo será utilizando un esquema de trabajo ágil preferentemente
+ metodología 
+\begin_inset Quotes eld
+\end_inset
+
+Scrum
+\begin_inset Quotes erd
+\end_inset
+
+ donde en el cual el cliente podrá estar presente durante el desarrollo
+ del presente proyecto.
  la tecnología que utilizaremos sera bajo licencias libres.
 \end_layout
 
@@ -140,8 +149,8 @@ Al finalizar se obtendrá una mejora considerable en la planificación de
  los contenidos, permitirá a los alumnos conocer los anticipadamente los
  contenidos y las actividades que se realizaran.
  a los profesores les permitirán llevar una bitácora de los contenidos vistos
- y los que se verán lo que se podría traducir en una mejor organización de
- los contenidos.
+ y los que se verán lo que se podría traducir en una mejor organización
+ de los contenidos.
  
 \end_layout
 

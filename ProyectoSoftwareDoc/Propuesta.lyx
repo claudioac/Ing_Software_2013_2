@@ -60,31 +60,46 @@
 \begin_body
 
 \begin_layout Title
-Planificacion clase a clase
+Planificación clase a clase
 \end_layout
 
 \begin_layout Section*
-problemática:
+Problemática Actual:
 \end_layout
 
 \begin_layout Standard
-En la situacion actual se carece de un sistema organizado y planificado
+En la situación actual se carece de un sistema organizado y planificado
  de los contenido o temas a tratar de una asignatura en el periodo de una
- catedra.
- Se desconoce tambien que temas o contenidos se veran en las proximas catedras
- o que actividad se realisara en estas.
+ cátedra.
+ Se desconoce también que temas o contenidos se verán en las próximas cátedras
+ o que actividad se realizara en estas.
 \end_layout
 
 \begin_layout Section*
-solucion:
+Solución Propuesta:
 \end_layout
 
 \begin_layout Standard
-Se propone un sistema que permita organizar los contenidos de las catredras
+Se propone un sistema que permita organizar los contenidos de las cátedras
  diarias que se estudiaran durante cada semana que tenga el semestre de
  dicha asignatura.
- Para ello se propone crear una seccion dentro del sitio web del departamento
- de informatica
+ Para ello se propone crear un apartado dentro del sitio web del departamento
+ de informática.
+ en dicho apartado tendrá una sección para el ingreso de las planificaciones
+ de las cátedras organizadas identificándose el profesor y la asignatura
+ a la cual corresponde dicha planificación.
+ también tendrá una sección en la cual se visualizaran dichas planificaciones
+ a la persona quien los necesite ya sean alumnos, encargados o por otros
+ profesores.
+\end_layout
+
+\begin_layout Section*
+Apreciaciones
+\end_layout
+
+\begin_layout Standard
+La solución propuesta puede ser adaptada a la real necesidad de los interesados,
+ con la salvedad de que no pueden escapar al alcance del proyecto.
 \end_layout
 
 \end_body

@@ -73,6 +73,30 @@ Claudio Acuña, José Acuña, Ricardo Soto
 \end_layout
 
 \begin_layout Section*
+Objetivos:
+\end_layout
+
+\begin_layout Subsection*
+Objetivo General
+\end_layout
+
+\begin_layout Itemize
+Realizar un sistema de planificación académica.
+\end_layout
+
+\begin_layout Subsection*
+Objetivos Específicos.
+\end_layout
+
+\begin_layout Enumerate
+Realizar un sistema de planificación académica web bajos tecnologías libres.
+\end_layout
+
+\begin_layout Enumerate
+Desarrollar un registro de contenidos clase a clase amigable con el usuario.
+\end_layout
+
+\begin_layout Section*
 Problemática Actual:
 \end_layout
 
@@ -141,7 +165,7 @@ El trabajo no tendrá costo para el cliente ya que forma parte de un proyecto
 \end_layout
 
 \begin_layout Section*
-Mejora Esperada.
+Conclusión o Mejora Esperada.
 \end_layout
 
 \begin_layout Standard

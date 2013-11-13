@@ -24,12 +24,12 @@
  
                 <div id='textopr'>
                     <article>
-                        <div class="Foto"><em>Jose</em><img src="/Tarea2_Ayudantia/jose.jpg" width='160' height='150' align="right"></div>
+                        <div class="Foto"><img src="/Tarea2_Ayudantia/jose.jpg" width='160' height='150' align="right"></div>
                         <hgroup>
                             <h1>Jose Acuña</h1>
                         </hgroup>
                             <p>Nombre: Jose Acuña</p>
-                            <p> Rut:nnnnnn-n</p>
+                            <p> Rut:16.381.843-4</p>
                            <p> Carrera:Ingenieria en Informatica.</p>
                           <p>  Asignatura: Ingenieria en Software</p>
                     </article>

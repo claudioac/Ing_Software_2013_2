@@ -23,7 +23,7 @@
             <section>
                 <div id='textopr'>
                     <article>
-                        <div class="Foto"><em>Jose</em><img src="/Tarea2_Ayudantia/Ricardo.jpg" width='160' height='150' align="right"></div>
+                        <div class="Foto"><img src="/Tarea2_Ayudantia/Ricardo.jpg" width='160' height='150' align="right"></div>
                         <hgroup>
                             <h1>Ricardo Soto</h1>
                         </hgroup>

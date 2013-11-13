@@ -28,11 +28,10 @@ and open the template in the editor.
 
                 <div id='textopr'>
                     <article>
-                        <div class="Foto"><em>Jose</em><img src="/Tarea2_Ayudantia/claudio.jpg" width='160' height='150' align="right"></div>
+                        <div class="Foto"><img src="/Tarea2_Ayudantia/claudio.jpg" width='160' height='150' align="right"></div>
                         <hgroup>
                             <h1>Claudio Acuña</h1>
                         </hgroup>
-<!--                        <img src="claudio.jpg" alt="" >-->
                             <p>Nombre: Claudio Acuña</p>
                             <p>Rut: 17.674.349-2</p>
                            <p> Carrera: Ingenieria en Informatica.</p>

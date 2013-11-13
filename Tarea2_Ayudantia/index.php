@@ -26,8 +26,10 @@ and open the template in the editor.
             </nav>
             </header>
             <section>
+
                 <div id='textopr'>
                     <article>
+                        <div class="Foto"><em>Jose</em><img src="/Tarea2_Ayudantia/claudio.jpg" width='160' height='150' align="right"></div>
                         <hgroup>
                             <h1>Claudio Acuña</h1>
                         </hgroup>

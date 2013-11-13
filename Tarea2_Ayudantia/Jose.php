@@ -22,8 +22,10 @@
             </nav>
             </header>
             <section>
+ 
                 <div id='textopr'>
                     <article>
+                        <div class="Foto"><em>Jose</em><img src="/Tarea2_Ayudantia/jose.jpg" width='160' height='150' align="right"></div>
                         <hgroup>
                             <h1>Jose Acuña</h1>
                         </hgroup>

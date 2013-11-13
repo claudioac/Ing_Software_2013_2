@@ -8,8 +8,7 @@ and open the template in the editor.
         <title>This is test</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="stylesheet2.css">
-        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-        <script src='scriptPrincipal2.js'></script>
+        
     </head>
     <body>
         <div id='contenido'>
@@ -47,6 +46,28 @@ and open the template in the editor.
                     </aside>
                 </div>
             </section>
+            <div id="frases">
+                    <footer>
+                        <p>
+                          
+                        <?
+                        
+                         
+                         $vector = array(
+                             1=>"”Siempre ha de haber dos, ni más ni menos. Un maestro, y un aprendiz.” Maestro Yoda.",
+                             2=>"”No lo intentes. Hazlo, o no lo hagas, pero no lo intentes.” Maestro Yoda",
+                             3=>"”Si hablas con Dios eres religioso, si Dios habla contigo, eres psicópata.”  Gregory House",
+                             4=>"”Gánate el respeto de los demás teniendo la osadía de ser tú mismo.”  Gregory House",
+                             5=>"”El amigo ha de ser como el dinero, que antes de necesitarlo, se sabe el valor que tiene.” Socrátes",
+                             6=>"” La ciencia humana consiste más en destruir errores que en descubrir verdades.” Socrátes",
+                         );
+                         $numero = rand(1,6);
+                         echo "$vector[$numero]";
+                         
+                         ?>
+                        </p>
+                    </footer>
+            </div>
 
         </div>
 

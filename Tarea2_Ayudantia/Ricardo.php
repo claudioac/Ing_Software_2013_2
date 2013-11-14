@@ -28,8 +28,8 @@
                             <h1>Ricardo Soto</h1>
                         </hgroup>
                             <p>Nombre: Ricardo Soto</p>
-                            <p> Rut:nnnnnn-n</p>
-                           <p> Carrera:Ingenieria Civil en Computación e Informatica.</p>
+                            <p> Rut:nnnn17326709-6n-n</p      >          
+                            <p> Carrera:Ingenieria Civil en Computación e Informatica.</p>
                           <p>  Asignatura: Ingenieria en Software</p>
                     </article>
                     <aside>

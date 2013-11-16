@@ -9,9 +9,9 @@
     <body>
         <div id='contenido'>
             <header>
-                <hgroup>
+                <div id='TituloPrincipal'>
                     <h1>Tarea Nº2</h1>
-                </hgroup>
+                 </div>
              <nav>
                 <ul>
                     <li><a href='index.php'>Claudio Acuña</a></li>
@@ -24,10 +24,10 @@
  
                 <div id='textopr'>
                     <article>
-                        <div class="Foto"><img src="/Tarea2_Ayudantia/jose.jpg" width='160' height='150' align="right"></div>
-                        <hgroup>
+                        <div class="Foto"><img style="float:right" src="/Tarea2_Ayudantia/jose.jpg" alt='jose' width='160' height='150' ></div>
+                        <div id='NombreTitulo'>
                             <h1>Jose Acuña</h1>
-                        </hgroup>
+                        </div>
                             <p>Nombre: Jose Acuña</p>
                             <p> Rut:16.381.843-4</p>
                            <p> Carrera:Ingenieria en Informatica.</p>
@@ -45,8 +45,7 @@
                     <footer>
                         <p>
                           
-                        <?
-                        
+                        <?                        
                          
                          $vector = array(
                              1=>"”Siempre ha de haber dos, ni más ni menos. Un maestro, y un aprendiz.” Maestro Yoda.",
@@ -61,6 +60,13 @@
                          
                          ?>
                         </p>
+                         <p>
+                        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                            <img style="border:0;width:88px;height:31px"
+                            src="http://jigsaw.w3.org/css-validator/images/vcss"
+                            alt="¡CSS Válido!" />
+                            </a>
+</p>
                     </footer>
             </div>
 

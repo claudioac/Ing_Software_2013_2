@@ -9,9 +9,9 @@
     <body>
         <div id='contenido'>
             <header>
-                <hgroup>
+                <div id='TituloPrincipal'>
                     <h1>Tarea Nº2</h1>
-                </hgroup>
+                </div>
              <nav>
                 <ul>
                     <li><a href='index.php'>Claudio Acuña</a></li>
@@ -23,12 +23,12 @@
             <section>
                 <div id='textopr'>
                     <article>
-                        <div class="Foto"><img src="/Tarea2_Ayudantia/Ricardo.jpg" width='160' height='150' align="right"></div>
-                        <hgroup>
+                        <div class="Foto"><img style="float:right" src="/Tarea2_Ayudantia/Ricardo.jpg" alt ='ricardo' width='160' height='150'></div>
+                        <div id='NombreTitulo'>
                             <h1>Ricardo Soto</h1>
-                        </hgroup>
+                        </div>
                             <p>Nombre: Ricardo Soto</p>
-                            <p> Rut:nnnn17326709-6n-n</p      >          
+                            <p> Rut: 17.326.709-6</p>          
                             <p> Carrera:Ingenieria Civil en Computación e Informatica.</p>
                           <p>  Asignatura: Ingenieria en Software</p>
                     </article>
@@ -60,6 +60,13 @@
                          
                          ?>
                         </p>
+                         <p>
+                        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                            <img style="border:0;width:88px;height:31px"
+                            src="http://jigsaw.w3.org/css-validator/images/vcss"
+                            alt="¡CSS Válido!" />
+                            </a>
+</p>
                     </footer>
             </div>
 

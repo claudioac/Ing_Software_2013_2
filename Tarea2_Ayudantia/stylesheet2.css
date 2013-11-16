@@ -64,17 +64,6 @@ a
    font-weight: bold;
 }
 
-.Foto em {
-    width: 212px;
-    height: 30px;
-    background: url(Tarea2_Ayudantia/picture-frame.png) no-repeat;
-    display: block;
-    position: absolute;
-    text-align: center;
-    font: 100%/100% Georgia, "Times New Roman", Times, serif;
-    padding-top: 145px;
-/*    border-radius: 20px;*/
-}
 #frases
 {
     

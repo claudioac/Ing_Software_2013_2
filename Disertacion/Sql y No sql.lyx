@@ -1,0 +1,468 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\usetheme{Warsaw}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+SQL Y NO SQL
+\end_layout
+
+\begin_layout Author
+Claudio Acuña 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+and
+\end_layout
+
+\end_inset
+
+ Ricardo Soto 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+and
+\end_layout
+
+\end_inset
+
+ José Acuña
+\end_layout
+
+\begin_layout Institute
+Universidad Tecnológica Metropolitana
+\begin_inset Newline newline
+\end_inset
+
+Facultad de Ingeniería
+\begin_inset Newline newline
+\end_inset
+
+Departamento de Computación e Informática
+\end_layout
+
+\begin_layout Date
+9 de diciembre de 2013
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+beamerdefaultoverlayspecification{<+->}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Índice
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introducción
+\end_layout
+
+\begin_layout BeginFrame
+Introducción
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Aunque el término(NoSQL) no es nuevo, se está poniendo de moda dentro de
+ los grandes desarrolladores de software el no usar bases de datos basadas
+ en lenguaje de consulta estructuradas SQL.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Las bases de datos se clasifican mayormente en tres tipos: Las bases de
+ datos relacionales, las orientadas a objetos, y las relacionales orientadas
+ a objetos.
+ Sin embargo, pronto nos dimos cuenta que, en la práctica, la mayoría de
+ los motores de bases de datos más populares se basan en la arquitectura
+ relacional, y todos ellos utilizan el lenguaje de consultas SQL (con variacione
+s) para operar con los datos.
+ Tanto es así, que SQL se convirtió con el paso de los años en un estándar
+ “de facto”, debido a su uso.
+ 
+\end_layout
+
+\begin_layout Section
+Definición
+\end_layout
+
+\begin_layout Subsection
+SQL
+\end_layout
+
+\begin_layout BeginFrame
+SQL
+\end_layout
+
+\begin_layout Itemize
+El lenguaje de consulta estructurado o SQL (por sus siglas en inglés structured
+ query language) es un lenguaje declarativo de acceso a bases de datos relaciona
+les que permite especificar diversos tipos de operaciones en ellas.
+ Una de sus características es el manejo del álgebra y el cálculo relacional
+ que permiten efectuar consultas con el fin de recuperar de forma sencilla
+ información de interés de bases de datos, así como hacer cambios en ella.
+\end_layout
+
+\begin_layout Itemize
+Los orígenes del SQL están ligados a los de las bases de datos relacionales.
+ En 1970 E.
+ F.
+ Codd propone el modelo relacional y asociado a este un sublenguaje de acceso
+ a los datos basado en el cálculo de predicados.
+\end_layout
+
+\begin_layout BeginFrame
+
+\end_layout
+
+\begin_layout Itemize
+Basándose en estas ideas, los laboratorios de IBM definen el lenguaje SEQUEL
+ (Structured English Query Language) que más tarde sería ampliamente implementad
+o por el sistema de gestión de bases de datos (SGBD) experimental System
+ R, desarrollado en 1977 también por IBM.
+ Sin embargo, fue Oracle quien lo introdujo por primera vez en 1979 en un
+ programa comercial.
+\end_layout
+
+\begin_layout BeginFrame
+Caracteristicas
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Lenguaje de definición de datos
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Lenguaje interactivo de manipulación de datos
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Integridad
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Definición de vistas
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Control de transacciones
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+SQL incorporado y dinámico
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Autorización
+\end_layout
+
+\begin_layout BeginFrame
+Tipos de Datos
+\end_layout
+
+\begin_layout Standard
+Algunos de los tipos de datos básicos de SQL son:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Date: 
+\series default
+una fecha de calendario que contiene el año (de cuatro cifras), el mes y
+ el día.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Time: 
+\series default
+La hora del día en horas minutos segundos (el valor predeterminado es 0).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Timestamp:
+\series default
+ la combinación de Date y Time.
+\end_layout
+
+\begin_layout BeginFrame
+Lenguaje de definición de datos (DDL)
+\end_layout
+
+\begin_layout Standard
+El lenguaje de definición de datos (en inglés Data Definition Language,
+ o DDL), es el que se encarga de la modificación de la estructura de los
+ objetos de la base de datos.
+ Incluye órdenes para modificar, borrar o definir las tablas en las que
+ se almacenan los datos de la base de datos.
+ Existen cuatro operaciones básicas: CREATE, ALTER, DROP y TRUNCATE.
+\end_layout
+
+\begin_layout BeginFrame
+Sistemas de gestión de base de datos
+\end_layout
+
+\begin_layout Itemize
+DB2 
+\end_layout
+
+\begin_layout Itemize
+Firebird 
+\end_layout
+
+\begin_layout Itemize
+HSQL 
+\end_layout
+
+\begin_layout Itemize
+Informix 
+\end_layout
+
+\begin_layout Itemize
+Interbase 
+\end_layout
+
+\begin_layout Itemize
+MariaDB 
+\end_layout
+
+\begin_layout Itemize
+Microsoft SQL Server 
+\end_layout
+
+\begin_layout Itemize
+MySQL 
+\end_layout
+
+\begin_layout Itemize
+Oracle 
+\end_layout
+
+\begin_layout Itemize
+PostgreSQL 
+\end_layout
+
+\begin_layout Itemize
+PervasiveSQL 
+\end_layout
+
+\begin_layout Itemize
+SQLite 
+\end_layout
+
+\begin_layout Itemize
+Sybase ASE
+\end_layout
+
+\begin_layout Subsection
+NoSQL
+\end_layout
+
+\begin_layout BeginFrame
+NOSQL
+\end_layout
+
+\begin_layout Itemize
+En informática, NoSQL (a veces llamado "no sólo SQL") es una amplia clase
+ de sistemas de gestión de bases de datos que difieren del modelo clásico
+ del sistema de gestión de bases de datos relacionales (RDBMS) en aspectos
+ importantes, el más destacado que no usan SQL como el principal lenguaje
+ de consultas.
+ Los datos almacenados no requieren estructuras fijas como tablas, normalmente
+ no soportan operaciones JOIN, ni garantizan completamente ACID (atomicidad,
+ coherencia, aislamiento y durabilidad), y habitualmente escalan bien horizontal
+mente.
+\end_layout
+
+\begin_layout BeginFrame
+Características
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Consistencia Eventual:
+\series default
+ No se implementan mecanismos rígidos de consistencia como los presentes
+ en las bases de datos relacionales, donde la confirmación de un cambio
+ implica una comunicación del mismo a todos los nodos que lo repliquen.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Estructura distribuida:
+\series default
+ Generalmente se distribuyen los datos mediante mecanismos de tablas de
+ hash distribuidas (DHT) ya que realmente se trata, según las distintas
+ implementaciones, de redes p2p.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Escalabilidad horizontal:
+\series default
+ La implementación típica se realiza en muchos nodos de capacidad de procesado
+ limitado, en vez de utilizar grandes Mainframes.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Tolerancia a fallos y Redundancia.
+\end_layout
+
+\begin_layout BeginFrame
+Tipos de bases de datos NoSQL
+\end_layout
+
+\begin_layout Itemize
+Bases de datos clave-valor (Cassandra, de Apache The Apache Cassandra ,
+ MongoDB )
+\end_layout
+
+\begin_layout Itemize
+Bases de datos documentales (MongoDB, de 10gen)
+\end_layout
+
+\begin_layout Itemize
+Bases de datos multidimensionales (OpenQM)
+\end_layout
+
+\begin_layout Itemize
+Bases de datos orientadas a objetos (Zope Object Database)
+\end_layout
+
+\begin_layout Itemize
+Bases de datos en grafo (Neo4j)
+\end_layout
+
+\begin_layout Section
+Similitudes
+\end_layout
+
+\begin_layout Subsection
+Similitudes
+\end_layout
+
+\begin_layout BeginFrame
+Similitudes
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\end_body
+\end_document

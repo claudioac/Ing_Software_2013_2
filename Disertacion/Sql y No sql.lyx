@@ -610,7 +610,7 @@ Ventaja de SQL
 \end_layout
 
 \begin_layout Itemize
-Es un estandar para el manejo de datos en un manejador de base de datos
+Es un estándar para el manejo de datos en un manejador de base de datos
  relacional
 \end_layout
 
@@ -633,17 +633,17 @@ Desventaja de SQL
 
 \begin_layout Itemize
 Es un lenguaje simple que si se requiere mayores implementaciones esta limitado
- a la explotacion de datos
+ a la explotación de datos
 \end_layout
 
 \begin_layout Itemize
-Se dice que es el estandar pero cuando se combina con tipos de datos estandares
- hay pequeñas diferencias que debilitan esta opcion
+Se dice que es el estándar pero cuando se combina con tipos de datos estándares
+ hay pequeñas diferencias que debilitan esta opción
 \end_layout
 
 \begin_layout Itemize
 Depende para ser seguro de que tan seguro sea el manejador de base de datos
- relacinal que lo este implementando
+ relacional que lo este implementando
 \end_layout
 
 \begin_layout Subsection

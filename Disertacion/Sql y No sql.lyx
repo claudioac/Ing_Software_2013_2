@@ -449,15 +449,147 @@ Bases de datos en grafo (Neo4j)
 \end_layout
 
 \begin_layout Section
-Similitudes
+Diferencias y Similitudes entre SQL y NoSQL
 \end_layout
 
 \begin_layout Subsection
-Similitudes
+Diferencias
 \end_layout
 
 \begin_layout BeginFrame
-Similitudes
+
+\lang english
+Diferencia de SQL Con respecto a NoSQL
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Permite una elevada productividad en codificación gracias a su base teórica
+ (Algebra Relacional).
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+No pueden existir dos tablas con el mismo nombre ni registro.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Las claves primarias son la clave principal de un registro dentro de una
+ tabla y éstas deben cumplir con la integridad de datos.
+\end_layout
+
+\begin_layout BeginFrame
+
+\lang english
+Diferencia de NoSQL con respecto a SQL.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+No usan SQL como lenguaje principal de consultas.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+No requieren estructuras fijas como tablas para almacenar los datos.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+No suelen cumplir ACID.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Arquitectura distribuida.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Escalabilidad horizontal.
+\end_layout
+
+\begin_layout Subsection
+Similitud
+\end_layout
+
+\begin_layout BeginFrame
+Similitud
+\end_layout
+
+\begin_layout Itemize
+Tanto SQL como NoSQL permite realizar procedimientos CRUD(Crear, Obtener,
+ Actualizar y Borrar)
+\end_layout
+
+\begin_layout BeginFrame
+Comparacion Entre Sentencias SQL y NoSQL
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename DDLNOSQL.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Comparacion Entre Sentencias SQL y NoSQL
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename DMLNOSQL.png
+	scale 36
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout EndFrame

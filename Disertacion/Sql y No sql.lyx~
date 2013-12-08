@@ -5,6 +5,7 @@
 \textclass beamer
 \begin_preamble
 \usetheme{Warsaw}
+\setbeamercolor{structure}{fg=green!90!black}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -677,6 +678,22 @@ No suelen garantizar transacciones
 
 \begin_layout Itemize
 Es sensitivo
+\end_layout
+
+\begin_layout BeginFrame
+Conclusion
+\end_layout
+
+\begin_layout Itemize
+NoSQL se presenta como una alternativa a las base de datos relacionales,
+ ya que resuelven el manejo de datos abundantes en transaciones muy inmediatas.
+ Muy conveniente a en la web por el alto flujo de datos.
+ 
+\end_layout
+
+\begin_layout Itemize
+Se obserba que tanto SQL como NoSQL presentan más diferecias que similitudes
+ en cuanto a sus caracteristicas.
 \end_layout
 
 \begin_layout EndFrame

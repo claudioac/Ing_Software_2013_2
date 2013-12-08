@@ -5,7 +5,6 @@
 \textclass beamer
 \begin_preamble
 \usetheme{Warsaw}
-\setbeamercolor{structure}{fg=green!90!black}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false

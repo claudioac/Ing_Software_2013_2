@@ -680,6 +680,22 @@ No suelen garantizar transacciones
 Es sensitivo
 \end_layout
 
+\begin_layout BeginFrame
+Conclucion
+\end_layout
+
+\begin_layout Itemize
+NoSQL se presenta como una alternativa a las base de datos relacionales,
+ ya que resuelven el manejo de datos abundantes en transaciones muy inmediatas.
+ Muy conveniente a en la web por el alto flujo de datos.
+ 
+\end_layout
+
+\begin_layout Itemize
+Se obserba que tanto SQL como NoSQL presentan más diferecias que similitudes
+ en cuanto a sus caracteristicas.
+\end_layout
+
 \begin_layout EndFrame
 
 \end_layout

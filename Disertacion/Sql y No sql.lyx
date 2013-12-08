@@ -596,5 +596,92 @@ status open
 
 \end_layout
 
+\begin_layout Section
+Ventajas y Desventajas de SQL Y NoSQL
+\end_layout
+
+\begin_layout Subsection
+Ventajas y desventaja de SQL
+\end_layout
+
+\begin_layout BeginFrame
+Ventaja de SQL
+\end_layout
+
+\begin_layout Itemize
+Es un estandar para el manejo de datos en un manejador de base de datos
+ relacional
+\end_layout
+
+\begin_layout Itemize
+Es no sensitivo
+\end_layout
+
+\begin_layout Itemize
+Es imperativo, no necesariamente secuencial aunque tenga un ordenamiento
+\end_layout
+
+\begin_layout Itemize
+es un lenguaje de alto nivel para datos, esto es con una sola instrucción
+ afectas a varios registro en tiempo real
+\end_layout
+
+\begin_layout BeginFrame
+Desventaja de SQL
+\end_layout
+
+\begin_layout Itemize
+Es un lenguaje simple que si se requiere mayores implementaciones esta limitado
+ a la explotacion de datos
+\end_layout
+
+\begin_layout Itemize
+Se dice que es el estandar pero cuando se combina con tipos de datos estandares
+ hay pequeñas diferencias que debilitan esta opcion
+\end_layout
+
+\begin_layout Itemize
+Depende para ser seguro de que tan seguro sea el manejador de base de datos
+ relacinal que lo este implementando
+\end_layout
+
+\begin_layout Subsection
+Ventajas y desventaja de NoSQL
+\end_layout
+
+\begin_layout BeginFrame
+Ventaja de SQL
+\end_layout
+
+\begin_layout Itemize
+Los servicios diseñados con NoSQL soportan un intenso volumen de operaciones
+ de lectura/escritura.
+ 
+\end_layout
+
+\begin_layout Itemize
+No genera cuello de botella
+\end_layout
+
+\begin_layout Itemize
+Escalabilidad horizontal
+\end_layout
+
+\begin_layout BeginFrame
+Desventaja de SQL
+\end_layout
+
+\begin_layout Itemize
+No suelen garantizar transacciones
+\end_layout
+
+\begin_layout Itemize
+Es sensitivo
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
 \end_body
 \end_document

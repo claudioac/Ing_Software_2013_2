@@ -331,6 +331,14 @@ Ejemplo
 \end_layout
 
 \begin_layout Standard
+Un cliente llega a la sucursal de un banco y comienza interactuar con el cajero que se ubica en un cubículo, dicho
+cajero solicita datos como el el nombre, apellido paterno, apellido materno, rut, fecha de nacimiento y 
+el monto , y donde el cliente pide su requerimiento, el cajero de la sucursal está controlado por el tesorero de la 
+sucursal el cual conoce todos los términos de los trámites disponibles en el, el cajero timbra el papel y lo firma, si 
+el tesorero aprobó el trámite que solicitó el cliente,  siendo de esta manera el tesorero verifica si el cliente tiene
+saldo disponible en su cuenta con el encargado de cuentas, si tiene fondo entonces el tesorero aprueba la 
+solicitud  y procede a la bóveda de la sucursal. del banco retirando el efectivo y procede a entregar al cajero, después
+el cajero  le pasa el monto  al cliente  y el comprobante firmado y timbrado. 
 
 \end_layout
 

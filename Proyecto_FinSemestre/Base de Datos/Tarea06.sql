@@ -425,7 +425,8 @@ ALTER TABLE regiones
 	REFERENCES Paises (pk)
 	ON UPDATE RESTRICT
 	ON DELETE RESTRICT
-;
+; 
+
 
 
 
